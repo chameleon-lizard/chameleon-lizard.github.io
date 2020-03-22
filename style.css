@@ -1,0 +1,227 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+}
+
+.bgimg-1,
+.bgimg-2,
+.bgimg-3,
+.bgimg-4 {
+    position: relative;
+    opacity: 1;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgimg-1 {
+    background-image: url("bed.jpg");
+    min-height: 100%;
+}
+
+.bgimg-2 {
+    background-image: url("spices.jpg");
+    min-height: 100%;
+}
+
+.bgimg-3 {
+    background-image: url("table.jpg");
+    min-height: 100%;
+}
+
+.bgimg-4 {
+    background-image: url("wires.jpg");
+    min-height: 100%;
+}
+
+.separator {
+    color: #ddd;
+    background-color: rgb(30, 34, 39);
+    text-align: center;
+    padding: 50px 80px;
+    text-align: center;
+}
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 30px;
+    letter-spacing: 0.5vw;
+}
+
+h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #ddd
+}
+
+
+/* Turn off parallax scrolling for tablets and phones */
+
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3,
+    .bgimg-4 {
+        background-attachment: scroll;
+    }
+}
+
+a:link {
+    color: #ddd;
+}
+
+a:visited {
+    color: #ddd;
+}
+
+a:hover {
+    color: #ddd;
+}
+
+a:active {
+    color: #ddd;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-github {
+    background: #777;
+    color: white;
+}
+
+.fa-facebook {
+    background: #777;
+    color: white;
+}
+
+.fa-twitter {
+    background: #777;
+    color: white;
+}
+
+.fa-instagram {
+    background: #777;
+    color: white;
+}
+
+.fa-pinterest {
+    background: #777;
+    color: white;
+}
+
+.fa-tumblr {
+    background: #777;
+    color: white;
+}
+
+.fa-telegram {
+    background: #777;
+    color: white;
+}
+
+.fa-vk {
+    background: #777;
+    color: white;
+}
+
+.fa-envelope {
+    background: #777;
+    color: white;
+}
+
+.animations {
+    -webkit-animation: fadein 3s;
+    /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 3s;
+    /* Firefox < 16 */
+    -ms-animation: fadein 3s;
+    /* Internet Explorer */
+    -o-animation: fadein 3s;
+    /* Opera < 12.1 */
+    animation: fadein 3s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* Firefox < 16 */
+
+@-moz-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* Safari, Chrome and Opera > 12.1 */
+
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* Internet Explorer */
+
+@-ms-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* Opera < 12.1 */
+
+@-o-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
