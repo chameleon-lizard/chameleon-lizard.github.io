@@ -4,7 +4,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Add icon library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <meta charset="utf-8">
@@ -23,7 +23,7 @@
 
     <div class="separator">
         <h3 style="text-align:center;">About me</h3>
-        <p>My name is Nikita Sushko, and NLP researcher. I enjoy linux, CTFs, homemade pasta, practical jokes and reading papers.</p>
+        <p>My name is Nikita Sushko, and I am NLP researcher. I enjoy Linux, Tetris, homemade pasta, practical jokes and reading papers.</p>
     </div>
 
     <div class="bgimg-2">
@@ -32,13 +32,53 @@
         </div>
     </div>
 
+    <style>
+        .separator a {
+            /* --- Styles for the icon containers --- */
+            /* Adjust these values to match your desired look */
+            /* font-size: 1.5em; */ /* Controls base size of Font Awesome icons */
+            width: auto;     /* Width of the circular background */
+            height: auto;    /* Height of the circular background */
+            line-height: auto; /* Vertically centers the Font Awesome icon */
+            display: inline-block;
+            text-align: center;
+            vertical-align: middle;
+            margin: 5px;
+            border-radius: 50%; /* Makes the background circular */
+            background-color: #555; /* Example background color (like your screenshot) */
+            color: white; /* Color for Font Awesome icons */
+            position: relative; /* Needed for absolute positioning of image if required */
+        }
+        
+        .separator a .icon-img {
+            /* --- Styles specific to the <img> icon --- */
+            height: 1em; /* Make image height relative to the font-size of 'a' */
+            width: 1em;  /* Make image width relative to the font-size of 'a' */
+            vertical-align: middle; /* Helps align with other inline elements */
+            /* Optional: If centering within the circle is tricky, you might need absolute positioning */
+            /* position: absolute; */
+            /* top: 50%; */
+            /* left: 50%; */
+            /* transform: translate(-50%, -50%); */
+        }
+        
+        /* Ensure Font Awesome fonts are specified (Check your FA version) */
+        .fa-brands {
+            font-family: "Font Awesome 6 Brands", "Font Awesome 5 Brands"; /* Add fallbacks */
+        }
+        .fa-envelope { /* Example for solid/regular icons */
+            font-family: "Font Awesome 6 Free", "Font Awesome 5 Free";
+            font-weight: 900; /* Or 400 for regular */
+        }
+        
+    </style>
     <div style="position:relative;">
         <div class="separator">
-            <a href="https://t.me/buckwheat_thoughts" class="fa fa-telegram"></a>
+            <a href="https://t.me/buckwheat_thoughts" class="fa fa-brands fa-telegram"></a>
             <a href="mailto://gorakievskaya@gmail.com" class="fa fa-envelope"></a>
-            <a href="https://scholar.google.com/citations?user=lIgc5xMAAAAJ" class="fas fa-file-pdf"></a>
-            <a href="https://huggingface.co/chameleon-lizard" target="_blank" src='static/images/hf-logo.svg'></a>
-            <a href="https://github.com/chameleon-lizard" class="fa fa-github"></a>
+            <a href="https://scholar.google.com/citations?user=lIgc5xMAAAAJ" class="fa fa-brands fa-google-scholar"></a>
+            <!-- <a href="https://huggingface.co/chameleon-lizard" target="_blank" src='static/images/hf-logo.svg'></a> -->
+            <a href="https://github.com/chameleon-lizard" class="fa fa-brands fa-github"></a>
         </div>
     </div>
 
@@ -49,8 +89,9 @@
     </div>
 
     <div style="position:relative;">
+        
         <div class="separator">
-            <a href="CV_en.pdf">Eng</a>
+            <a href="CV_en.pdf" style="background-color: transparent">Eng</a>
         </div>
     </div>
 
