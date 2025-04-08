@@ -19,22 +19,22 @@ html {
 }
 
 .bgimg-1 {
-    background-image: url("bed.jpg");
+    background-image: url("static/images/bed.jpg");
     min-height: 100%;
 }
 
 .bgimg-2 {
-    background-image: url("spices.jpg");
+    background-image: url("static/images/spices.jpg");
     min-height: 100%;
 }
 
 .bgimg-3 {
-    background-image: url("table.jpg");
+    background-image: url("static/images/table.jpg");
     min-height: 100%;
 }
 
 .bgimg-4 {
-    background-image: url("wires.jpg");
+    background-image: url("static/images/wires.jpg");
     min-height: 100%;
 }
 
